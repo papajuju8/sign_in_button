@@ -27,7 +27,8 @@ class SignInButton extends StatelessWidget {
   final String? text;
 
   /// overrides the default button padding
-  final EdgeInsets padding;
+  final double verticalPadding;
+  final double horizontalPadding;
 
   // overrides the default button elevation
   final double elevation;
@@ -43,7 +44,8 @@ class SignInButton extends StatelessWidget {
     Key? key,
     required this.onPressed,
     this.mini = false,
-    this.padding = EdgeInsets.zero,
+    this.verticalPadding = 0.0,
+    this.horizontalPadding = 0.0,
     this.shape,
     this.text,
     this.elevation = 2.0,
@@ -90,7 +92,8 @@ class SignInButton extends StatelessWidget {
               ? const Color(0xFFFFFFFF)
               : const Color(0xFF4285F4),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           innerPadding: EdgeInsets.zero,
           shape: shape,
           height: 36.0,
@@ -122,7 +125,8 @@ class SignInButton extends StatelessWidget {
               ? const EdgeInsets.fromLTRB(12, 0, 11, 0)
               : null,
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -135,7 +139,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.github,
           backgroundColor: const Color(0xFF444444),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -155,7 +160,8 @@ class SignInButton extends StatelessWidget {
               ? const Color(0xFFFFFFFF)
               : const Color(0xFF000000),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -168,7 +174,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.linkedinIn,
           backgroundColor: const Color(0xFF007BB6),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -181,7 +188,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.pinterest,
           backgroundColor: const Color(0xFFCB2027),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -194,7 +202,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.tumblr,
           backgroundColor: const Color(0xFF34526f),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -207,7 +216,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.twitter,
           backgroundColor: const Color(0xFF1DA1F2),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -220,7 +230,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.reddit,
           backgroundColor: const Color(0xFFFF4500),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -232,7 +243,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.quora,
           backgroundColor: const Color(0x00a40a00),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -244,7 +256,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.yahoo,
           backgroundColor: const Color(0x006001d2),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -256,7 +269,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.commentSms,
           backgroundColor: const Color(0x000072c6),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -268,7 +282,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.xbox,
           backgroundColor: const Color(0x00107c0f),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -280,7 +295,8 @@ class SignInButton extends StatelessWidget {
           icon: FontAwesomeIcons.microsoft,
           backgroundColor: const Color(0xff235A9F),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           clipBehavior: clipBehavior,
         );
@@ -295,7 +311,8 @@ class SignInButton extends StatelessWidget {
           iconColor: Colors.grey,
           backgroundColor: const Color(0xFFFFFFFF),
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           shape: shape,
           height: 36.0,
           clipBehavior: clipBehavior,
@@ -309,7 +326,8 @@ class SignInButton extends StatelessWidget {
           text: text ?? 'Sign in with Email',
           icon: Icons.email,
           onPressed: onPressed,
-          padding: padding,
+          verticalPadding: verticalPadding,
+          horizontalPadding: horizontalPadding,
           backgroundColor: Colors.grey[700]!,
           shape: shape,
           clipBehavior: clipBehavior,
